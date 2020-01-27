@@ -1,0 +1,24 @@
+package lab10;
+import java.awt.Color;
+import java.awt.Graphics;
+
+
+public class Portrait6JAYS extends Portrait {
+	public Portrait6JAYS() {
+		super(.2);
+		setBodyHeight(.3);
+	}
+	@Override
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		g.setColor(Color.ORANGE);
+		
+	int midX = getWidth() /2;
+		
+		//draws a tail
+		int smileRadius = (int)(0.5 * headRadius);
+	    g.drawArc(midX - smileRadius, (int)(0.8 * headRadius), smileRadius * 2,
+	        smileRadius * 2, 0, -180);
+		
+	}
+}

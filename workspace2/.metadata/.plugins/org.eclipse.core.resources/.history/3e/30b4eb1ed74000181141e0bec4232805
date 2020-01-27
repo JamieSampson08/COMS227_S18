@@ -1,0 +1,5 @@
+package lab10;
+
+public class Portrait6JAYS extends Portrait {
+
+}

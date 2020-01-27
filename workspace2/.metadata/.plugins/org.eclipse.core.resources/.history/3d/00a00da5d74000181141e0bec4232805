@@ -1,0 +1,17 @@
+package lab10;
+import java.awt.Color;
+import java.awt.Graphics;
+
+
+public class Portrait6JAYS extends Portrait {
+	public Portrait6JAYS() {
+		super(.03);
+		setBodyHeight( .3);
+	}
+	@Override
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		g.setColor(Color.ORANGE);
+		
+	}
+}
